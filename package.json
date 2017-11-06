@@ -1,0 +1,23 @@
+{
+  "name": "minty_fresh",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "express": "^4.16.2",
+    "fixed-data-table": "^0.6.4",
+    "nodemon": "^1.12.1",
+    "pg": "^7.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.9.0",
+    "jsonlint": "^1.6.2"
+  }
+}

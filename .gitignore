@@ -1,0 +1,6 @@
+TAGS
+node_modules
+.tern-port
+.tern-project
+/data/query_templates.json
+/data/server_templates.json

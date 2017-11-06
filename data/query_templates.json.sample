@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Query1",
+    "text": "SELECT * FROM table;",
+    "environment": ["prod"]
+  },
+  {
+    "name": "Query2",
+    "text": "SELECT * FROM new_table;",
+    "environment": ["inhouse"]
+  },
+  {
+    "name": "Query3",
+    "text": "SELECT * FROM both_table;",
+    "environment": ["prod", "inhouse"]
+  }
+]

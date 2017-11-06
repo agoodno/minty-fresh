@@ -1,0 +1,26 @@
+[
+  {
+    "countyNo": 28,
+    "inhouse": true,
+    "url": "postgresql:\/\/user:password@inhouse-server:5432\/db",
+    "name": "inhouseserver1"
+  },
+  {
+    "countyNo": 28,
+    "inhouse": true,
+    "url": "postgresql:\/\/user:password@inhouse-server:5432\/db",
+    "name": "inhouseserver2"
+  },
+  {
+    "countyNo": 28,
+    "inhouse": false,
+    "url": "postgresql:\/\/user:password@inhouse-server:5432\/db",
+    "name": "prodserver1"
+  },
+  {
+    "countyNo": 28,
+    "inhouse": false,
+    "url": "postgresql:\/\/user:password@inhouse-server:5432\/db",
+    "name": "prodserver2"
+  }
+]
