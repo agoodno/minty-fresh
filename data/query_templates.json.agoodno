@@ -1,0 +1,147 @@
+[
+  {
+    "name": "CaseHist for Stats",
+    "text": "SELECT c.\"countyNo\",c.\"caseNo\",c.\"caseType\",c.\"filingDate\",ch.\"histSeqNo\",ch.\"eventType\",he.\"descr\",ch.\"eventDate\",he.\"newStatus\",he.\"newMaint\",nmc.\"stopsTheClock\",he.\"removeMaint\",rmc.\"stopsTheClock\"\nFROM \"CaseHist\" ch\nJOIN \"Case\" c ON (c.\"countyNo\" = ch.\"countyNo\" AND c.\"caseNo\" = ch.\"caseNo\")\nJOIN \"HistEvent\" he ON (he.\"eventType\" = ch.\"eventType\") LEFT JOIN \"MaintCode\" nmc ON (nmc.\"maintCode\" = he.\"newMaint\")\n LEFT JOIN \"MaintCode\" rmc ON (rmc.\"maintCode\" = he.\"removeMaint\")\nWHERE ch.\"caseNo\" = '2011JC000016' --AND ch.\"countyNo\" = 28 AND ch.\"eventDate\" <= '09-27-2010'\nORDER BY \"countyNo\", \"caseNo\", \"eventDate\", \"histSeqNo\";",
+    "environment": ["prod", "inhouse"]
+  },
+  {
+    "name": "CaseStatReport without XML",
+    "text": "SELECT \"countyNo\",\"reportName\",\"month\",\"year\",\"ytd\",\"isCertified\",\"whenCreated\",\"versionNo\",\"userId\",\"includesPct\"\n--,\"reportXML\",\"reportPDF\"\nFROM \"CaseStatReport\"\nWHERE \"year\" = 2012 and \"month\" = 'June' and \"reportName\" = 'TrafficAndForfeitureDispositionSummary' and \"ytd\" = true;",
+    "environment": ["inhouse"]
+  },
+  {
+    "name": "CaseTransition",
+    "text": "SELECT ch.\"caseNo\",ch.\"histSeqNo\",ct.\"periodSeqNo\",ct.\"transitionCode\",ch.\"eventDate\",ch.\"eventType\", he.\"descr\",ct.\"ctofcNo\" AS \"CaseTransitionCtofcNo\",ch.\"ctofcNo\" AS \"CaseHistCtofcNo\",ch.\"prevRespCtofc\" AS \"CaseHistPrevRespCtofc\"\nFROM \"CaseHist\" ch\nJOIN \"CaseTransition\" ct ON (ch.\"countyNo\"=ct.\"countyNo\" and ch.\"caseNo\"=ct.\"caseNo\" and ch.\"histSeqNo\"=ct.\"histSeqNo\")\nJOIN \"HistEvent\" he ON (he.\"eventType\"=ch.\"eventType\")\nWHERE ch.\"caseNo\" = '2011JC000016' order by ch.\"eventDate\", ch.\"histSeqNo\";",
+    "environment": ["prod", "inhouse"]
+  },
+  {
+    "name": "Cases Not Purgeable",
+    "text": "SELECT * FROM \"CaseNotPurgeableReasons\" (CAST(66 AS \"CountyNoT\"), CAST ('1992TR007313' AS \"CaseNoT\"), CAST(null as \"DateT\"), cast(TRUE as \"BooleanT\"));",
+    "environment": ["inhouse"]
+  },
+  {
+    "name": "ControlRecord Query",
+    "text": "SELECT * FROM \"ControlRecord\" WHERE \"countyNo\" = $countyNo;",
+    "environment": ["prod", "inhouse"]
+  },
+  {
+    "name": "ControlRecords Query",
+    "text": "SELECT * FROM \"ControlRecord\";",
+    "environment": ["inhouse"]
+  },
+  {
+    "name": "Counties Query",
+    "text": "SELECT \"countyNo\", \"countyName\", \"districtNo\" FROM \"County\" WHERE \"countyNo\" IN (SELECT cr.\"countyNo\" FROM \"ControlRecord\" AS cr);",
+    "environment": ["inhouse"]
+  },
+  {
+    "name": "County Query",
+    "text": "SELECT * FROM \"County\" WHERE \"countyNo\" = $countyNo;",
+    "environment": ["prod", "inhouse"]
+  },
+  {
+    "name": "DA Case Filing XML Query",
+    "text": "SELECT * from \"StepImportDAFiling\" WHERE \"daCaseNo\" = '2011XX123456';",
+    "environment": ["prod", "inhouse"]
+  },
+  {
+    "name": "DOJ Adjudication Reportable Statutes",
+    "text": "SELECT * FROM \"StatuteSev\" WHERE \"isReportToDOJ\" = 't';",
+    "environment": ["prod", "inhouse"]
+  },
+  {
+    "name": "DOR Trip Assess table",
+    "text": "SELECT * from \"TripAssess\" WHERE \"tripSeqNo\" = 'xxxxx';",
+    "environment": ["prod", "inhouse"]
+  },
+  {
+    "name": "DOR Trip Hist table",
+    "text": "SELECT * FROM \"TripHist\" WHERE \"tripSeqNo\" = 'xxxxx';",
+    "environment": ["prod", "inhouse"]
+  },
+  {
+    "name": "DOR Trip table Query 1",
+    "text": "SELECT * from \"Trip\" WHERE \"debtNo\" = '00000' and \"searchName\" = 'LASTNAME,FIRSTNAME' ORDER BY \"debtNo\";",
+    "environment": ["prod", "inhouse"]
+  },
+  {
+    "name": "DOR Trip table Query 2",
+    "text": "SELECT * from \"Trip\" WHERE \"ssn\" = 'xxx-xx-xxxx' ORDER BY \"debtNo\";",
+    "environment": ["prod", "inhouse"]
+  },
+  {
+    "name": "Epayment Queries",
+    "text": "SELECT * FROM \"EPaymentRTPC\" where \"confirmationId\" = 'WCSSTC000034708';\n--Once the record comes up, note the batchId and then enter the appropriate batchId into the following query:\nSELECT * FROM \"EPmtRcvblDetail\" WHERE \"batchId\" = '1285015068';\nSELECT * FROM \"EPmtHeader\" WHERE \"batchId\" = '1285015068';",
+    "environment": ["prod", "inhouse"]
+  },
+  {
+    "name": "JarFileProfile",
+    "text": "SELECT * from \"JarFileProfile\";",
+    "environment": ["inhouse"]
+  },
+  {
+    "name": "JarFile",
+    "text": "SELECT * from \"JarFile\";",
+    "environment": ["inhouse"]
+  },
+  {
+    "name": "JDash Delegation Verification",
+    "text": "SELECT * FROM \"JDashDelegation\" order by \"ctofcNo\" ASC;",
+    "environment": ["prod", "inhouse"]
+  },
+  {
+    "name": "New Record / Bad Record check",
+    "text": "-- if a county was unreachable for the check of unpublished (i.e. 'N'ew) or 'B'ad StepExport records, run this:\nSELECT to_char((CURRENT_DATE + INTERVAL '4 hours')::TIMESTAMPTZ, 'Dy, Mon DD, YYYY HH12:MI:SS AM TZ') AS \"_time-inserted-pre\";\n\nSELECT \"interfaceName\", \"messageType\", count(*)\nFROM   \"StepExport\"\nWHERE  status = 'N'\n  AND  \"timeInserted\" <= (CURRENT_DATE + INTERVAL '4 hours')::TIMESTAMPTZ\nGROUP BY \"interfaceName\", \"messageType\"\nORDER BY \"interfaceName\", \"messageType\";\n\nSELECT to_char(CURRENT_DATE - INTERVAL '1 day', 'Dy, Mon DD, YYYY HH12:MI:SS AM') AS \"_time-inserted-test-from\",\n       to_char(CURRENT_DATE,                    'Dy, Mon DD, YYYY HH12:MI:SS AM') AS \"_time-inserted-test-to\";\n\nSELECT \"interfaceName\", \"messageType\", count(*)\nFROM   \"StepExport\"\nWHERE  status = 'B'\n  AND  \"timeInserted\" BETWEEN (CURRENT_DATE - INTERVAL '1 day')::TIMESTAMPTZ AND (CURRENT_DATE)::TIMESTAMPTZ\nGROUP BY \"interfaceName\", \"messageType\"\nORDER BY \"interfaceName\", \"messageType\";",
+    "environment": ["inhouse"]
+  },
+  {
+    "name": "OK to Delete Query",
+    "text": "SELECT * FROM \"Bookmark\" where \"countQueryClass\" like '%PutQueryNameHere%';\nSELECT * FROM \"ReportList\" where \"updateQuery\" like '%PutQueryNameHere%';\nSELECT * FROM \"ReportList\" where \"hiddenQueryClass\" like '%PutQueryNameHere%';\nSELECT * FROM \"AdHocReport\" where \"queryName\" like '%PutQueryNameHere%';\nSELECT * FROM \"RptQuery\" where \"queryName\" like '%PutQueryNameHere%';",
+    "environment": ["inhouse"]
+  },
+  {
+    "name": "Showcrim",
+    "text": "SELECT showcrim('2011CM001202');",
+    "environment": ["inhouse"]
+  },
+  {
+    "name": "STEP Export Bad Record Report",
+    "text": "SELECT * FROM \"StepExport\" WHERE \"status\" = 'B' and \"timeModified\" = '2011-09-01'\nORDER BY \"interfaceName\", \"messageType\";",
+    "environment": ["inhouse"]
+  },
+  {
+    "name": "STEP Export 'B'ad Record Report",
+    "text": "SELECT se.\"countyNo\", se.\"interfaceName\" AS _interface, se.\"messageType\" AS \"_msgType\", se.\"status\", se.\"seqNo\",\n       to_char(se.\"timeInserted\", 'Dy, Mon DD, YYYY HH12:MI:SS AM TZ') AS \"_timeInserted\",\n       to_char(se.\"timeModified\", 'Dy, Mon DD, YYYY HH12:MI:SS AM TZ') AS \"_timeModified\",\n       se.\"key1\", se.\"value1\", se.\"key2\", se.\"value2\", se.\"key3\", se.\"value3\",\n       se.\"key4\", se.\"value4\", se.\"key5\", se.\"value5\", se.\"key6\", se.\"value6\",\n       to_char(excptn.\"exceptionTimestamp\", 'Dy, Mon DD, YYYY HH12:MI:SS AM TZ') AS \"_exceptionTimestamp\"\nFROM              \"StepExport\"       se\n  LEFT OUTER JOIN \"StepExportExcptn\" excptn\n   ON  (    excptn.\"interfaceName\" = se.\"interfaceName\"\n        AND excptn.\"messageType\"   = se.\"messageType\"\n        AND excptn.\"seqNo\"         = se.\"seqNo\"\n        AND excptn.\"countyNo\"      = se.\"countyNo\")\nWHERE  se.\"status\" = 'B'\n  AND  se.\"interfaceName\" IN (SELECT distinct \"interfaceName\" FROM \"StepExport\" WHERE \"timeInserted\" >= CURRENT_DATE - INTERVAL '1 day' AND status = 'B')\n  AND  se.\"timeModified\" >= CURRENT_DATE - INTERVAL '1 day'\nORDER BY se.\"interfaceName\", se.\"messageType\";\n\nSELECT se.\"seqNo\", excptn.\"exceptionText\"\nFROM              \"StepExport\"       se\n  LEFT OUTER JOIN \"StepExportExcptn\" excptn\n   ON  (    excptn.\"interfaceName\" = se.\"interfaceName\"\n        AND excptn.\"messageType\"   = se.\"messageType\"\n        AND excptn.\"seqNo\"         = se.\"seqNo\"\n        AND excptn.\"countyNo\"      = se.\"countyNo\")\nWHERE  se.\"status\" = 'B'\n  AND  se.\"interfaceName\" IN (SELECT distinct \"interfaceName\" FROM \"StepExport\" WHERE \"timeInserted\" >= CURRENT_DATE - INTERVAL '1 day' AND status = 'B')\n  AND  se.\"timeModified\" >= CURRENT_DATE - INTERVAL '1 day'\nORDER BY se.\"interfaceName\", se.\"messageType\";\n",
+    "environment": ["prod"]
+  },
+  {
+    "name": "STEP Export Bad Record Report",
+    "text": "SELECT se.\"interfaceName\", se.\"messageType\", se.\"status\", se.\"seqNo\", se.\"timeInserted\", se.\"timeModified\", se.\"key1\", se.\"value1\", se.\"key2\", se.\"value2\", se.\"key3\", se.\"value3\", se.\"key4\", se.\"value4\", se.\"key5\", se.\"value5\", se.\"key6\", se.\"value6\", se.\"countyNo\", excptn.\"exceptionTimestamp\", excptn.\"exceptionText\"\nFROM \"StepExport\" se LEFT OUTER JOIN \"StepExportExcptn\" excptn ON (excptn.\"interfaceName\" = se.\"interfaceName\" and excptn.\"messageType\" = se.\"messageType\" and excptn.\"seqNo\" = se.\"seqNo\" and excptn.\"countyNo\" = se.\"countyNo\")\nWHERE se.\"status\" = 'B' and se.\"timeModified\" >= '2017-01-01'\nORDER BY se.\"interfaceName\", se.\"messageType\";",
+    "environment": ["prod"]
+  },
+  {
+    "name": "STEP Message",
+    "text": "select * from \"Message\" \"M\", \"Body\" \"B\" where \"B\".\"bodySeqNo\" = \"M\".\"bodySeqNo\"\nand \"M\".\"destQueue\" = 'CCAP-DANewCaseFiling'\nand \"M\".\"created\" = '2011-09-01'\nand \"B\".\"body\" like '%<countyNumber>40</countyNumber>%'\nand \"B\".\"body\" like '%<daCaseNumber>2011ML018209</daCaseNumber>%'\nORDER BY \"created\" DESC;",
+    "environment": ["prod", "inhouse"]
+  },
+  {
+    "name": "STEP Message size",
+    "text": "select pg_size_pretty(octet_length(\"body\")) from \"Message\" M \nJOIN \"Body\" B ON  ( M.\"bodySeqNo\" = B.\"bodySeqNo\" ) \nWHERE \"messageId\" = 231054849 and \"destQueue\" = 'CCAP-EFiling';",
+    "environment": ["prod", "inhouse"]
+  }  ,
+  {
+    "name": "Table-Col_Mapping",
+    "text": "-- replace 'Case' with a different table name (in both places) to see its column list\nSELECT 'Case' AS \"table\" FROM \"ControlRecord\" LIMIT 1;\nSELECT * FROM \"Attribute\" WHERE relation = (SELECT id FROM \"Relation\" WHERE name = 'Case');",
+    "environment": ["inhouse"]
+  },
+  {
+    "name": "UpdateHist",
+    "text": "SELECT * from \"UpdateHist\" order by \"timeOfUpdate\" DESC;",
+    "environment": ["inhouse"]
+  },
+  {
+    "name": "XMLDTDs lookup",
+    "text": "-- from: GetLatestDTDPQ\nSELECT x1.\"countyNo\", x1.\"dtd\"\nFROM   \"XMLDTDs\" AS x1\nWHERE  x1.\"countyNo\" = (SELECT cr.\"countyNo\" FROM \"ControlRecord\" AS cr)\n  AND  x1.\"dtd\"      LIKE 'dnrdisposition%xsd'\n  AND  NOT EXISTS (SELECT 1\n                   FROM   \"XMLDTDs\" AS x2\n                   WHERE  x2.\"countyNo\" = x1.\"countyNo\"\n                     AND  x2.\"dtd\"      LIKE 'dnrdisposition%xsd'\n                     AND  x2.\"dtdId\"    > x1.\"dtdId\");",
+    "environment": ["inhouse"]
+  }
+]

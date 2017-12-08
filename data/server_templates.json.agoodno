@@ -1,0 +1,1006 @@
+[
+  {
+    "name": "dev6 (trunk) -- 28 (Jefferson)",
+    "url": "postgresql://viewer:viewer@dev6-db:5612/cc",
+    "domain": "CC",
+    "inhouse": true,
+    "countyNo": 28
+  },
+  {
+    "name": "cirstats",
+    "url": "postgresql://viewer:viewer@165.219.90.201:5472/cir",
+    "domain": "CC",
+    "inhouse": true,
+    "countyNo": null
+  },
+  {
+    "name": "cirqtest",
+    "url": "postgresql://viewer:viewer@165.219.90.199:5412/cir",
+    "domain": "CC",
+    "inhouse": true,
+    "countyNo": null
+  },
+  {
+    "name": "cirtrunk",
+    "url": "postgresql://viewer:viewer@dev6-db:5542/cir",
+    "domain": "CC",
+    "inhouse": true,
+    "countyNo": null
+  },
+  {
+    "name": "stats -- 28",
+    "url": "postgresql://viewer:viewer@165.219.90.201:5462/cc",
+    "domain": "CC",
+    "inhouse": true,
+    "countyNo": 28
+  },
+  {
+    "name": "qtest -- 9 (Chippewa)",
+    "url": "postgresql://viewer:viewer@165.219.220.10:5412/cc",
+    "domain": "CC",
+    "inhouse": true,
+    "countyNo": 9
+  },
+  {
+    "name": "qtest -- 14 (Dodge)",
+    "url": "postgresql://viewer:viewer@165.219.220.20:5412/cc",
+    "domain": "CC",
+    "inhouse": true,
+    "countyNo": 14
+  },
+  {
+    "name": "efiling-qtest",
+    "url": "postgresql://viewer:viewer@estage-db.wicourts.gov:5412/ccefiling",
+    "domain": "CC",
+    "inhouse": true,
+    "countyNo": null
+  },
+  {
+    "name": "dev2 -- 12 (Crawford)",
+    "url": "postgresql://viewer:viewer@165.219.80.102:5612/cc",
+    "domain": "CC",
+    "inhouse": true,
+    "countyNo": 12
+  },
+  {
+    "name": "dev2 -- 25 (Iowa)",
+    "url": "postgresql://viewer:viewer@165.219.80.102:5622/cc",
+    "domain": "CC",
+    "inhouse": true,
+    "countyNo": 25
+  },
+  {
+    "name": "dev3 -- 32 (Lacrosse)",
+    "url": "postgresql://viewer:viewer@dev3-db:5612/cc",
+    "domain": "CC",
+    "inhouse": true,
+    "countyNo": 32
+  },
+  {
+    "name": "dev3 -- 41 (Monroe)",
+    "url": "postgresql://viewer:viewer@dev3-db:5622/cc",
+    "domain": "CC",
+    "inhouse": true,
+    "countyNo": 41
+  },
+  {
+    "name": "dev3 -- efiling",
+    "url": "postgresql://viewer:viewer@dev3-db:5642/ccefiling",
+    "domain": "CC",
+    "inhouse": true,
+    "countyNo": null
+  },
+  {
+    "name": "dev4 -- 17 (Dunn)",
+    "url": "postgresql://viewer:viewer@dev4-db:5612/cc",
+    "domain": "CC",
+    "inhouse": true,
+    "countyNo": 17
+  },
+  {
+    "name": "dev4 -- 70 (Winnebago)",
+    "url": "postgresql://viewer:viewer@dev4-db:5622/cc",
+    "domain": "CC",
+    "inhouse": true,
+    "countyNo": 70
+  },
+  {
+    "name": "dev4 -- efiling",
+    "url": "postgresql://viewer:viewer@dev4-db:5642/ccefiling",
+    "domain": "CC",
+    "inhouse": true,
+    "countyNo": null
+  },
+  {
+    "name": "dev5 -- 21 (Forest)",
+    "url": "postgresql://viewer:viewer@dev5-db:5612/cc",
+    "domain": "CC",
+    "inhouse": true,
+    "countyNo": 21
+  },
+  {
+    "name": "dev5 -- 26 (Iron)",
+    "url": "postgresql://viewer:viewer@dev5-db:5622/cc",
+    "domain": "CC",
+    "inhouse": true,
+    "countyNo": 26
+  },
+  {
+    "name": "dev5 -- efiling",
+    "url": "postgresql://viewer:viewer@dev5-db:5642/ccefiling",
+    "domain": "CC",
+    "inhouse": true,
+    "countyNo": null
+  },
+  {
+    "name": "dev6 (trunk) -- 45 (Ozaukee)",
+    "url": "postgresql://viewer:viewer@dev6-db:5622/cc",
+    "domain": "CC",
+    "inhouse": true,
+    "countyNo": 45
+  },
+  {
+    "name": "dev6 (trunk) -- efiling",
+    "url": "postgresql://viewer:viewer@dev6-db:5642/ccefiling",
+    "domain": "CC",
+    "inhouse": true,
+    "countyNo": null
+  },
+  {
+    "name": "dev7 (patches) -- 2 (Ashland)",
+    "url": "postgresql://viewer:viewer@dev7-db:5612/cc",
+    "domain": "CC",
+    "inhouse": true,
+    "countyNo": 2
+  },
+  {
+    "name": "dev7 (patches) -- 47 (Pierce)",
+    "url": "postgresql://viewer:viewer@dev7-db:5622/cc",
+    "domain": "CC",
+    "inhouse": true,
+    "countyNo": 47
+  },
+  {
+    "name": "dev7 -- efiling",
+    "url": "postgresql://viewer:viewer@dev7-db:5642/ccefiling",
+    "domain": "CC",
+    "inhouse": true,
+    "countyNo": null
+  },
+  {
+    "name": "dev8 -- 3 (Barron)",
+    "url": "postgresql://viewer:viewer@dev8-db:5612/cc",
+    "domain": "CC",
+    "inhouse": true,
+    "countyNo": 3
+  },
+  {
+    "name": "dev8 -- 29 (Juneau)",
+    "url": "postgresql://viewer:viewer@dev8-db:5622/cc",
+    "domain": "CC",
+    "inhouse": true,
+    "countyNo": 29
+  },
+  {
+    "name": "dev8 -- efiling",
+    "url": "postgresql://viewer:viewer@dev8-db:5642/ccefiling",
+    "domain": "CC",
+    "inhouse": true,
+    "countyNo": null
+  },
+  {
+    "name": "dev9 -- 8 (Calumet)",
+    "url": "postgresql://viewer:viewer@dev9-db:5612/cc",
+    "domain": "CC",
+    "inhouse": true,
+    "countyNo": 8
+  },
+  {
+    "name": "dev9 -- 59 (Sheboygan)",
+    "url": "postgresql://viewer:viewer@dev9-db:5622/cc",
+    "domain": "CC",
+    "inhouse": true,
+    "countyNo": 59
+  },
+  {
+    "name": "dev9 -- efiling",
+    "url": "postgresql://viewer:viewer@dev9-db:5642/ccefiling",
+    "domain": "CC",
+    "inhouse": true,
+    "countyNo": null
+  },
+  {
+    "name": "patches_dev -- 44",
+    "url": "postgresql://viewer:viewer@165.219.90.243:5472/cc",
+    "domain": "CC",
+    "inhouse": true,
+    "countyNo": 44
+  },
+  {
+    "name": "patches -- 70",
+    "url": "postgresql://viewer:viewer@165.219.90.243:5442/cc",
+    "domain": "CC",
+    "inhouse": true,
+    "countyNo": 70
+  },
+  {
+    "name": "training -- 11",
+    "url": "postgresql://viewer:viewer@165.219.101.10:5412/cc",
+    "domain": "CC",
+    "inhouse": true,
+    "countyNo": 11
+  },
+  {
+    "name": "training -- 13",
+    "url": "postgresql://viewer:viewer@165.219.88.183:5412/cc",
+    "domain": "CC",
+    "inhouse": true,
+    "countyNo": 13
+  },
+  {
+    "name": "training -- 40",
+    "url": "postgresql://viewer:viewer@165.219.80.100:5412/cc",
+    "domain": "CC",
+    "inhouse": true,
+    "countyNo": 40
+  },
+  {
+    "name": "bbetr -- 76",
+    "url": "postgresql://viewer:viewer@165.219.91.125:5412/bbe",
+    "domain": "CC",
+    "inhouse": true,
+    "countyNo": 76
+  },
+  {
+    "name": "bbedev -- 76",
+    "url": "postgresql://viewer:viewer@165.219.90.203:5412/bbedev",
+    "domain": "CC",
+    "inhouse": true,
+    "countyNo": 76
+  },
+  {
+    "name": "bbestage -- 76",
+    "url": "postgresql://viewer:viewer@165.219.91.122:5412/bbe",
+    "domain": "CC",
+    "inhouse": true,
+    "countyNo": 76
+  },
+  {
+    "name": "bbeweb -- 76",
+    "url": "postgresql://viewer:viewer@gprtr-db:5512/bbeweb",
+    "domain": "CC",
+    "inhouse": true,
+    "countyNo": 76
+  },
+  {
+    "name": "olrtr -- 75",
+    "url": "postgresql://viewer:viewer@165.219.91.125:5432/olrtr",
+    "domain": "CC",
+    "inhouse": true,
+    "countyNo": 75
+  },
+  {
+    "name": "olrdev -- 75",
+    "url": "postgresql://viewer:viewer@165.219.90.203:5432/olrdev",
+    "domain": "CC",
+    "inhouse": true,
+    "countyNo": 75
+  },
+  {
+    "name": "olrstage -- 75",
+    "url": "postgresql://viewer:viewer@165.219.91.122:5432/olr",
+    "domain": "CC",
+    "inhouse": true,
+    "countyNo": 75
+  },
+  {
+    "name": "courtopstr -- 99",
+    "url": "postgresql://viewer:viewer@165.219.91.125:5442/courtopstr",
+    "domain": "CC",
+    "inhouse": true,
+    "countyNo": 99
+  },
+  {
+    "name": "courtopsdev -- 99",
+    "url": "postgresql://viewer:viewer@165.219.90.203:5442/courtopsdev",
+    "domain": "CC",
+    "inhouse": true,
+    "countyNo": 99
+  },
+  {
+    "name": "courtopsstage -- 99",
+    "url": "postgresql://viewer:viewer@165.219.91.122:5442/courtops",
+    "domain": "CC",
+    "inhouse": true,
+    "countyNo": 99
+  },
+  {
+    "name": "courtopswebdev -- 99",
+    "url": "postgresql://viewer:viewer@165.219.90.203:5742/courtopsweb",
+    "domain": "CC",
+    "inhouse": true,
+    "countyNo": 99
+  },
+  {
+    "name": "courtopswebtr -- 99",
+    "url": "postgresql://viewer:viewer@165.219.90.203:5752/courtopsweb",
+    "domain": "CC",
+    "inhouse": true,
+    "countyNo": 99
+  },
+  {
+    "name": "sccatr -- 74",
+    "url": "postgresql://viewer:viewer@165.219.91.125:5422/scca",
+    "domain": "CC",
+    "inhouse": true,
+    "countyNo": 74
+  },
+  {
+    "name": "sccadev -- 74",
+    "url": "postgresql://viewer:viewer@165.219.90.203:5422/sccadev",
+    "domain": "CC",
+    "inhouse": true,
+    "countyNo": 74
+  },
+  {
+    "name": "sccastage -- 74",
+    "url": "postgresql://viewer:viewer@165.219.91.122:5422/scca",
+    "domain": "CC",
+    "inhouse": true,
+    "countyNo": 74
+  },
+  {
+    "name": "sccaweb -- 74",
+    "url": "postgresql://viewer:viewer@165.219.90.203:5442/sccaweb",
+    "domain": "CC",
+    "inhouse": true,
+    "countyNo": 74
+  },
+  {
+    "name": "sccawebtr -- 74",
+    "url": "postgresql://viewer:viewer@165.219.90.203:5492/sccaweb",
+    "domain": "CC",
+    "inhouse": true,
+    "countyNo": 74
+  },
+  {
+    "name": "intclient-dev",
+    "url": "postgresql://viewer:viewer@165.219.80.111:5592/intclient",
+    "domain": "CC",
+    "inhouse": true,
+    "countyNo": null
+  },
+  {
+    "name": "statutes-tr",
+    "url": "postgresql://viewer:viewer@165.219.91.123:5432/statutes",
+    "domain": "CC",
+    "inhouse": true,
+    "countyNo": null
+  },
+  {
+    "name": "statutes-rc",
+    "url": "postgresql://viewer:viewer@165.219.91.127:5432/statutes",
+    "domain": "CC",
+    "inhouse": true,
+    "countyNo": null
+  },
+  {
+    "disabled": true,
+    "name": "Artemis - Bigbird",
+    "url": "postgresql://viewer:viewer@165.219.80.200:5412/cir",
+    "domain": "CC",
+    "inhouse": false,
+    "countyNo": null
+  },
+  {
+    "disabled": true,
+    "name": "Athena - Bigbird",
+    "url": "postgresql://viewer:viewer@165.219.90.200:5412/cir",
+    "domain": "CC",
+    "inhouse": false,
+    "countyNo": null
+  },
+  {
+    "disabled": true,
+    "name": "Plato - Bigbird",
+    "url": "postgresql://viewer:viewer@165.219.90.210:5412/cir",
+    "domain": "CC",
+    "inhouse": false,
+    "countyNo": null
+  },
+  {
+    "name": "CIR1",
+    "url": "postgresql://viewer:viewer@165.219.91.134:5412/cir",
+    "domain": "CC",
+    "inhouse": false,
+    "countyNo": null
+  },
+  {
+    "name": "Saber - CIR",
+    "url": "postgresql://viewer:viewer@saber:5412/cir",
+    "domain": "CC",
+    "inhouse": false,
+    "countyNo": null
+  },
+  {
+    "name": "Bowie - CIR",
+    "url": "postgresql://viewer:viewer@bowie:5412/cir",
+    "domain": "CC",
+    "inhouse": false,
+    "countyNo": null
+  },
+  {
+    "name": "STEP server",
+    "url": "postgresql://viewer:viewer@step-db:5412/step",
+    "domain": "CC",
+    "inhouse": false,
+    "countyNo": null
+  },
+  {
+    "name": "ADAMS_sql -- 1",
+    "url": "postgresql://viewer:viewer@hotstandby:5401/cc",
+    "domain": "CC",
+    "inhouse": false,
+    "countyNo": 1
+  },
+  {
+    "name": "ASHLAND_sql -- 2",
+    "url": "postgresql://viewer:viewer@hotstandby:5402/cc",
+    "domain": "CC",
+    "inhouse": false,
+    "countyNo": 2
+  },
+  {
+    "name": "BARRON_sql -- 3",
+    "url": "postgresql://viewer:viewer@hotstandby:5403/cc",
+    "domain": "CC",
+    "inhouse": false,
+    "countyNo": 3
+  },
+  {
+    "name": "BAYFIELD_sql -- 4",
+    "url": "postgresql://viewer:viewer@hotstandby:5404/cc",
+    "domain": "CC",
+    "inhouse": false,
+    "countyNo": 4
+  },
+  {
+    "name": "BROWN_sql -- 5",
+    "url": "postgresql://viewer:viewer@hotstandby:5405/cc",
+    "domain": "CC",
+    "inhouse": false,
+    "countyNo": 5
+  },
+  {
+    "name": "BUFFALO_sql -- 6",
+    "url": "postgresql://viewer:viewer@hotstandby:5406/cc",
+    "domain": "CC",
+    "inhouse": false,
+    "countyNo": 6
+  },
+  {
+    "name": "BURNETT_sql -- 7",
+    "url": "postgresql://viewer:viewer@hotstandby:5407/cc",
+    "domain": "CC",
+    "inhouse": false,
+    "countyNo": 7
+  },
+  {
+    "name": "CALUMET_sql -- 8",
+    "url": "postgresql://viewer:viewer@hotstandby:5408/cc",
+    "domain": "CC",
+    "inhouse": false,
+    "countyNo": 8
+  },
+  {
+    "name": "CHIPPEWA_sql -- 9",
+    "url": "postgresql://viewer:viewer@hotstandby:5409/cc",
+    "domain": "CC",
+    "inhouse": false,
+    "countyNo": 9
+  },
+  {
+    "name": "CLARK_sql -- 10",
+    "url": "postgresql://viewer:viewer@hotstandby:5410/cc",
+    "domain": "CC",
+    "inhouse": false,
+    "countyNo": 10
+  },
+  {
+    "name": "COLUMBIA_sql -- 11",
+    "url": "postgresql://viewer:viewer@hotstandby:5411/cc",
+    "domain": "CC",
+    "inhouse": false,
+    "countyNo": 11
+  },
+  {
+    "name": "CRAWFORD_sql -- 12",
+    "url": "postgresql://viewer:viewer@hotstandby:5412/cc",
+    "domain": "CC",
+    "inhouse": false,
+    "countyNo": 12
+  },
+  {
+    "name": "DANE_sql -- 13",
+    "url": "postgresql://viewer:viewer@hotstandby:5413/cc",
+    "domain": "CC",
+    "inhouse": false,
+    "countyNo": 13
+  },
+  {
+    "name": "DODGE_sql -- 14",
+    "url": "postgresql://viewer:viewer@hotstandby:5414/cc",
+    "domain": "CC",
+    "inhouse": false,
+    "countyNo": 14
+  },
+  {
+    "name": "DOOR_sql -- 15",
+    "url": "postgresql://viewer:viewer@hotstandby:5415/cc",
+    "domain": "CC",
+    "inhouse": false,
+    "countyNo": 15
+  },
+  {
+    "name": "DOUGLAS_sql -- 16",
+    "url": "postgresql://viewer:viewer@hotstandby:5416/cc",
+    "domain": "CC",
+    "inhouse": false,
+    "countyNo": 16
+  },
+  {
+    "name": "DUNN_sql -- 17",
+    "url": "postgresql://viewer:viewer@hotstandby:5417/cc",
+    "domain": "CC",
+    "inhouse": false,
+    "countyNo": 17
+  },
+  {
+    "name": "EAUCLAIRE_sql -- 18",
+    "url": "postgresql://viewer:viewer@hotstandby:5418/cc",
+    "domain": "CC",
+    "inhouse": false,
+    "countyNo": 18
+  },
+  {
+    "name": "FLORENCE_sql -- 19",
+    "url": "postgresql://viewer:viewer@hotstandby:5419/cc",
+    "domain": "CC",
+    "inhouse": false,
+    "countyNo": 19
+  },
+  {
+    "name": "FONDDULAC_sql -- 20",
+    "url": "postgresql://viewer:viewer@hotstandby:5420/cc",
+    "domain": "CC",
+    "inhouse": false,
+    "countyNo": 20
+  },
+  {
+    "name": "FOREST_sql -- 21",
+    "url": "postgresql://viewer:viewer@hotstandby:5421/cc",
+    "domain": "CC",
+    "inhouse": false,
+    "countyNo": 21
+  },
+  {
+    "name": "GRANT_sql -- 22",
+    "url": "postgresql://viewer:viewer@hotstandby:5422/cc",
+    "domain": "CC",
+    "inhouse": false,
+    "countyNo": 22
+  },
+  {
+    "name": "GREEN_sql -- 23",
+    "url": "postgresql://viewer:viewer@hotstandby:5423/cc",
+    "domain": "CC",
+    "inhouse": false,
+    "countyNo": 23
+  },
+  {
+    "name": "GREENLAKE_sql -- 24",
+    "url": "postgresql://viewer:viewer@hotstandby:5424/cc",
+    "domain": "CC",
+    "inhouse": false,
+    "countyNo": 24
+  },
+  {
+    "name": "IOWA_sql -- 25",
+    "url": "postgresql://viewer:viewer@hotstandby:5425/cc",
+    "domain": "CC",
+    "inhouse": false,
+    "countyNo": 25
+  },
+  {
+    "name": "IRON_sql -- 26",
+    "url": "postgresql://viewer:viewer@hotstandby:5426/cc",
+    "domain": "CC",
+    "inhouse": false,
+    "countyNo": 26
+  },
+  {
+    "name": "JACKSON_sql -- 27",
+    "url": "postgresql://viewer:viewer@hotstandby:5427/cc",
+    "domain": "CC",
+    "inhouse": false,
+    "countyNo": 27
+  },
+  {
+    "name": "JEFFERSON_sql -- 28",
+    "url": "postgresql://viewer:viewer@hotstandby:5428/cc",
+    "domain": "CC",
+    "inhouse": false,
+    "countyNo": 28
+  },
+  {
+    "name": "JUNEAU_sql -- 29",
+    "url": "postgresql://viewer:viewer@hotstandby:5429/cc",
+    "domain": "CC",
+    "inhouse": false,
+    "countyNo": 29
+  },
+  {
+    "name": "KENOSHA_sql -- 30",
+    "url": "postgresql://viewer:viewer@hotstandby:5430/cc",
+    "domain": "CC",
+    "inhouse": false,
+    "countyNo": 30
+  },
+  {
+    "name": "KEWAUNEE_sql -- 31",
+    "url": "postgresql://viewer:viewer@hotstandby:5431/cc",
+    "domain": "CC",
+    "inhouse": false,
+    "countyNo": 31
+  },
+  {
+    "name": "LACROSSE_sql -- 32",
+    "url": "postgresql://viewer:viewer@hotstandby:5432/cc",
+    "domain": "CC",
+    "inhouse": false,
+    "countyNo": 32
+  },
+  {
+    "name": "LAFAYETTE_sql -- 33",
+    "url": "postgresql://viewer:viewer@hotstandby:5433/cc",
+    "domain": "CC",
+    "inhouse": false,
+    "countyNo": 33
+  },
+  {
+    "name": "LANGLADE_sql -- 34",
+    "url": "postgresql://viewer:viewer@hotstandby:5434/cc",
+    "domain": "CC",
+    "inhouse": false,
+    "countyNo": 34
+  },
+  {
+    "name": "LINCOLN_sql -- 35",
+    "url": "postgresql://viewer:viewer@hotstandby:5435/cc",
+    "domain": "CC",
+    "inhouse": false,
+    "countyNo": 35
+  },
+  {
+    "name": "MANITOWOC_sql -- 36",
+    "url": "postgresql://viewer:viewer@hotstandby:5436/cc",
+    "domain": "CC",
+    "inhouse": false,
+    "countyNo": 36
+  },
+  {
+    "name": "MARATHON_sql -- 37",
+    "url": "postgresql://viewer:viewer@hotstandby:5437/cc",
+    "domain": "CC",
+    "inhouse": false,
+    "countyNo": 37
+  },
+  {
+    "name": "MARINETTE_sql -- 38",
+    "url": "postgresql://viewer:viewer@hotstandby:5438/cc",
+    "domain": "CC",
+    "inhouse": false,
+    "countyNo": 38
+  },
+  {
+    "name": "MARQUETTE_sql -- 39",
+    "url": "postgresql://viewer:viewer@hotstandby:5439/cc",
+    "domain": "CC",
+    "inhouse": false,
+    "countyNo": 39
+  },
+  {
+    "name": "MENOMINEE_sql -- 72",
+    "url": "postgresql://viewer:viewer@hotstandby:5472/cc",
+    "domain": "CC",
+    "inhouse": false,
+    "countyNo": 72
+  },
+  {
+    "name": "Milwaukee_sql -- 40",
+    "url": "postgresql://viewer:viewer@hotstandby:5440/cc",
+    "domain": "CC",
+    "inhouse": false,
+    "countyNo": 40
+  },
+  {
+    "name": "MONROE_sql -- 41",
+    "url": "postgresql://viewer:viewer@hotstandby:5441/cc",
+    "domain": "CC",
+    "inhouse": false,
+    "countyNo": 41
+  },
+  {
+    "name": "OCONTO_sql -- 42",
+    "url": "postgresql://viewer:viewer@hotstandby:5442/cc",
+    "domain": "CC",
+    "inhouse": false,
+    "countyNo": 42
+  },
+  {
+    "name": "ONEIDA_sql -- 43",
+    "url": "postgresql://viewer:viewer@hotstandby:5443/cc",
+    "domain": "CC",
+    "inhouse": false,
+    "countyNo": 43
+  },
+  {
+    "name": "Outagamie_sql -- 44",
+    "url": "postgresql://viewer:viewer@hotstandby:5444/cc",
+    "domain": "CC",
+    "inhouse": false,
+    "countyNo": 44
+  },
+  {
+    "name": "OZAUKEE_sql -- 45",
+    "url": "postgresql://viewer:viewer@hotstandby:5445/cc",
+    "domain": "CC",
+    "inhouse": false,
+    "countyNo": 45
+  },
+  {
+    "name": "PEPIN_sql -- 46",
+    "url": "postgresql://viewer:viewer@hotstandby:5446/cc",
+    "domain": "CC",
+    "inhouse": false,
+    "countyNo": 46
+  },
+  {
+    "name": "PIERCE_sql -- 47",
+    "url": "postgresql://viewer:viewer@hotstandby:5447/cc",
+    "domain": "CC",
+    "inhouse": false,
+    "countyNo": 47
+  },
+  {
+    "name": "POLK_sql -- 48",
+    "url": "postgresql://viewer:viewer@hotstandby:5448/cc",
+    "domain": "CC",
+    "inhouse": false,
+    "countyNo": 48
+  },
+  {
+    "name": "PORTAGE_sql -- 49",
+    "url": "postgresql://viewer:viewer@hotstandby:5449/cc",
+    "domain": "CC",
+    "inhouse": false,
+    "countyNo": 49
+  },
+  {
+    "name": "PRICE_sql -- 50",
+    "url": "postgresql://viewer:viewer@hotstandby:5450/cc",
+    "domain": "CC",
+    "inhouse": false,
+    "countyNo": 50
+  },
+  {
+    "name": "RACINE_sql -- 51",
+    "url": "postgresql://viewer:viewer@hotstandby:5451/cc",
+    "domain": "CC",
+    "inhouse": false,
+    "countyNo": 51
+  },
+  {
+    "name": "RICHLAND_sql -- 52",
+    "url": "postgresql://viewer:viewer@hotstandby:5452/cc",
+    "domain": "CC",
+    "inhouse": false,
+    "countyNo": 52
+  },
+  {
+    "name": "ROCK_sql -- 53",
+    "url": "postgresql://viewer:viewer@hotstandby:5453/cc",
+    "domain": "CC",
+    "inhouse": false,
+    "countyNo": 53
+  },
+  {
+    "name": "RUSK_sql -- 54",
+    "url": "postgresql://viewer:viewer@hotstandby:5454/cc",
+    "domain": "CC",
+    "inhouse": false,
+    "countyNo": 54
+  },
+  {
+    "name": "STCROIX_sql -- 55",
+    "url": "postgresql://viewer:viewer@hotstandby:5455/cc",
+    "domain": "CC",
+    "inhouse": false,
+    "countyNo": 55
+  },
+  {
+    "name": "SAUK_sql -- 56",
+    "url": "postgresql://viewer:viewer@hotstandby:5456/cc",
+    "domain": "CC",
+    "inhouse": false,
+    "countyNo": 56
+  },
+  {
+    "name": "SAWYER_sql -- 57",
+    "url": "postgresql://viewer:viewer@hotstandby:5457/cc",
+    "domain": "CC",
+    "inhouse": false,
+    "countyNo": 57
+  },
+  {
+    "name": "SHAWANO_sql -- 58",
+    "url": "postgresql://viewer:viewer@hotstandby:5458/cc",
+    "domain": "CC",
+    "inhouse": false,
+    "countyNo": 58
+  },
+  {
+    "name": "SHEBOYGAN_sql -- 59",
+    "url": "postgresql://viewer:viewer@hotstandby:5459/cc",
+    "domain": "CC",
+    "inhouse": false,
+    "countyNo": 59
+  },
+  {
+    "name": "TAYLOR_sql -- 60",
+    "url": "postgresql://viewer:viewer@hotstandby:5460/cc",
+    "domain": "CC",
+    "inhouse": false,
+    "countyNo": 60
+  },
+  {
+    "name": "TREMPEALEAU_sql -- 61",
+    "url": "postgresql://viewer:viewer@hotstandby:5461/cc",
+    "domain": "CC",
+    "inhouse": false,
+    "countyNo": 61
+  },
+  {
+    "name": "VERNON_sql -- 62",
+    "url": "postgresql://viewer:viewer@hotstandby:5462/cc",
+    "domain": "CC",
+    "inhouse": false,
+    "countyNo": 62
+  },
+  {
+    "name": "VILAS_sql -- 63",
+    "url": "postgresql://viewer:viewer@hotstandby:5463/cc",
+    "domain": "CC",
+    "inhouse": false,
+    "countyNo": 63
+  },
+  {
+    "name": "Walworth_sql -- 64",
+    "url": "postgresql://viewer:viewer@hotstandby:5464/cc",
+    "domain": "CC",
+    "inhouse": false,
+    "countyNo": 64
+  },
+  {
+    "name": "WASHBURN_sql -- 65",
+    "url": "postgresql://viewer:viewer@hotstandby:5465/cc",
+    "domain": "CC",
+    "inhouse": false,
+    "countyNo": 65
+  },
+  {
+    "name": "WASHINGTON_sql -- 66",
+    "url": "postgresql://viewer:viewer@hotstandby:5466/cc",
+    "domain": "CC",
+    "inhouse": false,
+    "countyNo": 66
+  },
+  {
+    "name": "WAUKESHA_sql -- 67",
+    "url": "postgresql://viewer:viewer@hotstandby:5467/cc",
+    "domain": "CC",
+    "inhouse": false,
+    "countyNo": 67
+  },
+  {
+    "name": "WAUPACA_sql -- 68",
+    "url": "postgresql://viewer:viewer@hotstandby:5468/cc",
+    "domain": "CC",
+    "inhouse": false,
+    "countyNo": 68
+  },
+  {
+    "name": "WAUSHARA_sql -- 69",
+    "url": "postgresql://viewer:viewer@hotstandby:5469/cc",
+    "domain": "CC",
+    "inhouse": false,
+    "countyNo": 69
+  },
+  {
+    "name": "WINNEBAGO_sql -- 70",
+    "url": "postgresql://viewer:viewer@hotstandby:5470/cc",
+    "domain": "CC",
+    "inhouse": false,
+    "countyNo": 70
+  },
+  {
+    "name": "WOOD_sql -- 71",
+    "url": "postgresql://viewer:viewer@hotstandby:5471/cc",
+    "domain": "CC",
+    "inhouse": false,
+    "countyNo": 71
+  },
+  {
+    "name": "BBE -- 76",
+    "url": "postgresql://viewer:viewer@165.219.90.225:5412/bbe",
+    "domain": "GPR",
+    "inhouse": false,
+    "countyNo": 76
+  },
+  {
+    "name": "OLR -- 75",
+    "url": "postgresql://viewer:viewer@165.219.90.225:5432/olr",
+    "domain": "GPR",
+    "inhouse": false,
+    "countyNo": 75
+  },
+  {
+    "name": "SCCA -- 74",
+    "url": "postgresql://viewer:viewer@165.219.90.225:5422/scca",
+    "domain": "GPR",
+    "inhouse": false,
+    "countyNo": 74
+  },
+  {
+    "name": "CourtOps -- 99",
+    "url": "postgresql://viewer:viewer@165.219.90.225:5442/courtops",
+    "domain": "GPR",
+    "inhouse": false,
+    "countyNo": 99
+  },
+  {
+    "name": "SCCWAT",
+    "url": "postgresql://viewer:viewer@165.219.90.248:5422/datasource",
+    "domain": "INTERFACES",
+    "inhouse": false,
+    "countyNo": null
+  },
+  {
+    "name": "intclient",
+    "url": "postgresql://viewer:viewer@165.219.90.224:5422/intclient",
+    "domain": "INTERFACES",
+    "inhouse": false,
+    "countyNo": null
+  },
+  {
+    "name": "eCourts",
+    "url": "postgresql://viewer:viewer@ecourts-db:5412/ecourts",
+    "domain": "INTERFACES",
+    "inhouse": false,
+    "countyNo": null
+  },
+  {
+    "name": "eFiling",
+    "url": "postgresql://viewer:viewer@efiling-db:5412/ccefiling",
+    "domain": "INTERFACES",
+    "inhouse": false,
+    "countyNo": null
+  },
+  {
+    "name": "forms",
+    "url": "postgresql://viewer:viewer@165.219.90.248:5452/forms",
+    "domain": "INTERFACES",
+    "inhouse": false,
+    "countyNo": null
+  }
+]

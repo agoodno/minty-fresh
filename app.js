@@ -19,19 +19,24 @@ var servers = require('./data/server_templates.json');
 var queryTemplates = require('./data/query_templates.json');
 
 app.post('/results', function (request, response) {
-  const client = new Client({ connectionString: request.body.connection_string });
+  // console.log("request=");
+  // console.log(request);
+
+  const connectionString = request.body.connection_string;
+  // console.log(`connectionString=${JSON.stringify(connectionString)}`);
+
+  const queryText = request.body.query_text;
+  // console.log(`queryText=${JSON.stringify(queryText)}`);
+
+  const client = new Client({ connectionString: connectionString });
   client.connect();
-
-  const query_text = request.body.query_text;
-  // console.log("query_text="); console.log(query_text);
-
   client.query('SET SESSION CHARACTERISTICS AS TRANSACTION READ ONLY;', (err, res) => {
     if (err) {
       response.send([err.message]);
     }
   });
 
-  client.query(request.body.query_text, (err, res) => {
+  client.query(queryText, (err, res) => {
     function makeResp(rows) {
       if (rows != undefined && rows.length > 0)
         return { columns: Object.keys(rows[0]), rows: rows };
@@ -52,7 +57,7 @@ app.get('/server_templates', function (request, response) {
   // console.log(env);
   var byEnv = (env === 'inhouse') ? (it) => it.inhouse : (it) => !it.inhouse;
   var filteredServerTemplates = servers.filter(byEnv);
-  // console.log(filteredServerTemplates.length);
+  console.log(filteredServerTemplates.length);
   response.send(filteredServerTemplates);
 });
 
